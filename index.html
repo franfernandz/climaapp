@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+    <title>Clima App</title>
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <!-- CSS-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Google Fonts Open Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Scripts JavaScript -->
+    <script src="scripts.js" defer></script>
+</head>
+
+<body>
+    <div class="card"> <!-- cuerpo de la tarjeta-->
+        <div class="search"> <!-- barra de búsqueda -->
+            <input type="text" class="search-bar" placeholder="Buscar ciudad" /> <!-- input de texto -->
+            <button><i class="fas fa-search"></i></button> <!-- botón de búsqueda. FA search -->
+        </div>
+
+        <!-- Cuerpo de la temperatura. "Loading" para poder mostrar el "cargando" mientras carga el resultado de la búsqueda -->
+        <div class="weather loading"> 
+            <h2 class="city">Clima en Ciudad Autónoma de Buenos Aires</h2> <!-- muestra la ciudad buscada -->
+            <h2 class="temp">25ºC</h2> <!-- temperatura -->
+            
+            <div class="flex"> 
+                <img src="" alt="" class="icon"/> <!-- icono del clima -->
+                <div class="description">Soleado</div> <!-- descripción del clima -->
+            </div>
+            
+            <div class="humidity">Humedad: 65%</div> <!-- valor de humedad -->
+            <div class="wind">Viento: 4 km/h</div> <!-- velocidad del viento -->
+        </div>
+    </div>
+</body>
+
+</html>

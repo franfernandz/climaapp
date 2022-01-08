@@ -1,0 +1,108 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 120%;
+    background: #222;
+    background-image: url('https://source.unsplash.com/random/1600x900/?landscape');    
+}
+
+/****/
+
+.card { /* Tarjeta de información */
+    background: rgba(255,255,255,.2);
+    color: #000;
+    padding:  2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 500px;
+    margin: 1em;
+   	backdrop-filter: blur(10px);
+   	box-shadow: 0 5px 15px #0000009b;
+}
+
+/****/
+
+.search { /* Barra de búsqueda */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+button { /* botón */
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 38px;
+    width: 50px;
+    background-color: #7c7c7c2b;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+input.search-bar { /* input de la barra */
+    border: none;
+    outline: none;
+    padding: .3em 1em;
+    border-radius: 24px;
+    background-color: #7c7c7c2b;
+    font-family: inherit;
+    color: #ffffff;
+    font-size: 100%;
+    width: 100%;
+    transition: .3s ease-in-out;
+}
+
+input.search-bar:hover { /* hover de la barra de búsqueda */
+	background: #7c7c7c6b;
+}
+
+input.placeholder { /* color del placeholder */
+	color: #fff;
+}
+
+button:hover { /* hover del botón */
+    background: #7c7c7c6b;
+}
+
+/****/
+
+h2.temp { /* Estilos temperatura */
+	margin: 0;
+	margin-bottom: .5em;
+}
+
+/****/
+
+.flex { /* contenedor de icono + descripción del clima */
+	display: flex;
+	align-items: center;
+	margin-left: -8px;
+}
+
+.description { /* estilos de la descripción */
+	text-transform: capitalize;
+	margin-left: 10px;
+}
+
+/****/
+
+/* estilos del "cargando" mientras carga resultados */
+.weather.loading {
+	visibility: hidden;
+	max-height: 20px;
+	position: relative;
+}
+
+.weather.loading:after {
+	visibility: visible;
+	content: "Cargando...";
+	color: #fff;
+	position: absolute;
+	top: 0;
+	left: 20px;
+}
