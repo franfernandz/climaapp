@@ -1,6 +1,6 @@
 /*función para tomar el clima */
 let weather = {
-	"apiKey": "Aquí va la api key",
+	"apiKey": "Acá va la api key",
 	fetchWeather: function(city) {
 		fetch(
 			"https://api.openweathermap.org/data/2.5/weather?q=" 
